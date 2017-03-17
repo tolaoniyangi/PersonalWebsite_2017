@@ -210,16 +210,7 @@ p.quote{
 
 /*landing page style*/
 /*adds background to text*/
-.backgroundcliptext .index-link-styling {
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url(../img/background_text.png);
-    text-decoration: none;
-    color: transparent;
-}
-
-.backgroundcliptext .index-link-styling-1 {
+.backgroundcliptext .index-link-styling a,p{
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -230,7 +221,7 @@ p.quote{
 
 /*styling for entire title page basically*/
 .title{
-    padding: 30% 0 0 2%; /* top|right|bottom|left */ 
+    padding: 10% 0 0 0; /* top|right|bottom|left */ 
     margin: auto;
     max-height: 100%;
     vertical-align: center;
@@ -238,27 +229,28 @@ p.quote{
 
 h1 {
     font-family: 'Montserrat', sans-serif; 
-    font-weight: 400;
-    font-size: 10em;
-    text-align: left;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
     padding: 1.5% 0 0 0; 
     line-height: 40%;
+    text-transform: uppercase;
 }
 
 p.index-link-styling{
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
-    font-size: 4em;
-    text-align: left;
+    font-size: 2em;
+    text-align: center;
     bottom: 0;
 }
 
-col-md-8p.index-link-styling-1{
+a.index-link-styling{
     font-family: 'Montserrat', sans-serif; 
     font-weight: 400;
-    font-size: 4em;
-    text-align: left;
-    margin-bottom: 3%;
+    font-size: 2em;
+    text-align: center;
+    bottom: 0;
 }
 
 h2 {
