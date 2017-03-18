@@ -211,22 +211,17 @@ p.quote{
 /*landing page style*/
 /*adds background to text*/
 .backgroundcliptext .index-link-styling a,p{
-    background-color: transparent;
-    font-weight: bold;
-    color: #000;
-}
-
-.index-link-styling a:hover{
-    background-color: transparent;
-    font-weight: bold;
-    color: #000;
-    border-bottom: .05em solid #33000d;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     background-image: url(../img/background_text.png);
     text-decoration: none;
-    border-image: url(../img/background_text.png) 25 30 10 20 repeat;
+}
+
+.index-link-styling a:hover{
+    background-color: transparent;
+    color: #fff;
+    border-bottom: .05em solid #fff;
 }
 
 /*styling for entire title page basically*/
@@ -239,7 +234,7 @@ p.quote{
 
 h1 {
     font-weight: 200;
-    color: #545454;
+    color: #e8e8e8;
     font-size: 1.05em;
     text-align: left;
     line-height: 8%;
@@ -248,7 +243,7 @@ h1 {
 
 h1#footer{
     font-size: .75em;
-    color: #a9a9a9;
+    color: #545454;
     font-weight: 100;
     bottom: .5em;
     position: absolute;
@@ -267,7 +262,7 @@ a#indexLinkSmall{
     font-size: 2em;
     text-align: left;
     line-height: 1.3em;
-    color: #000;
+    color: #e8e8e8;
     padding-top: 1%;
 }
 
