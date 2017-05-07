@@ -6,6 +6,11 @@ font-family: 'Amiko', sans-serif; */
 
 body{
     font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+}
+
+.main-container {
+  padding: 40px 15px;
 }
 
 /*navbar styling*/
@@ -220,7 +225,6 @@ p.quote{
     background-color: transparent;
     font-weight: bold;
     color: #000;
-    border-bottom: .05em solid #33000d;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
