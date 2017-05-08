@@ -274,7 +274,7 @@ body{
         }
 
 
-/* responsive styling for project page*/
+/* responsive styling for project and home pages*/
     @media screen and (max-width: 991px) {
         .sidePanel .col-md-3{
             position: relative;
@@ -283,3 +283,20 @@ body{
             position: relative;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .container.main-container {
+            display: table;
+            clear: both;
+        }
+        .container.main-container:after{
+            display: table;
+            clear: both;
+        }
+        .container.main-container:before{
+            display: table;
+            clear: both;
+        }
+    }
+
+
