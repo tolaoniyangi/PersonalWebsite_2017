@@ -6,8 +6,8 @@ font-family: 'Amiko', sans-serif; */
 
 body{
     font-family: 'Montserrat', sans-serif !important;
-    padding-top: 50px;
-    font-size: 10px;
+    padding-top: 60px !important;
+    font-size: 10px !important;
 }
 
 /*---- side panel ----*/
@@ -131,9 +131,28 @@ body{
     }
 
 /*navbar styling on top*/
+    .nav.navbar-nav {
+        padding-left: 0 !important; /*for padding for the projects, about, contact */
+    }
+
+    ul.nav.navbar-nav {
+        float: right !important;
+    }
+
+    .navbar-header:hover{   
+        border-bottom: 1px solid !important;
+        border-bottom-color: rgba(39,52,52,.38) !important;
+    }
+
+    .container .navbar-header, .collapse {
+        padding: 0 0 0 1% !important;
+        padding-top: 50px !important; /* pushes navbar down */
+    }
+
     .navbar{
         background-color: #fff;
         margin-bottom: 0;
+        border-bottom: 0 !important;
     }
 
     .navbar-inverse{
@@ -148,16 +167,20 @@ body{
     .navbar-inverse .navbar-nav>.active>a{
         text-transform: none;
         font-weight: 800;
-        color:rgba(39,52,52,.38) !important;
-        border-bottom-color: #fff;
+        color: #9d9d9d !important;
+        border-bottom: 1px solid;
+        border-bottom-color: #9d9d9d !important;
+        background-color: transparent !important;
     }
 
-    .navbar-inverse .navbar-nav>.active>a:hover{
-        background: rgba(0,0,0,0.1) !important;
+    .navbar-inverse .navbar-nav>a:hover{
+        /*background: rgba(0,0,0,0.1) !important;*/
+        border-bottom-color: #f9f9f9 !important;
+        border-bottom: 1px solid;
     }
 
     .navbar-inverse .navbar-nav>li>a{
-        color: #9d9d9d !important;
+        color: rgba(39,52,52,.38) !important;
     }
 
     .navbar-inverse .navbar-brand{
