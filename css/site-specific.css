@@ -5,198 +5,258 @@ font-family: 'Wire One', sans-serif;
 font-family: 'Amiko', sans-serif; */
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     padding-top: 50px;
 }
 
-.main-container {
-  /*padding: 40px 15px;*/
-}
+/*---- side panel ----*/
+    .sidePanel .col-md-3{
+        position: fixed;
+        left: 0;
+        padding: 2% !important;
+    }
 
-.tab-content {
-    padding-top: 3%;
-}
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    padding: 0 !important;
-}
+    .sidePanel .col-md-3 h3{
+        text-align: left;
+        margin: 0;
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
 
-.thumbnail {
-    border: .2px solid red;
-    opacity: 1;
-    background: black !important;
-    padding: 0 !important;
-    padding-right: 0 !important;
-    margin-bottom: 0 !important;
-    border: none !important;
-}
+    .sidePanel .col-md-3 p{
+        text-align: left;
+        margin: 0;
+        padding-left: 4%;
+        padding-bottom: 1%;
+    }
 
-.thumbnailTitle {
-    position: absolute;
-    top: 0;
-    padding: 2%;
-    margin: 2%;
-    background-color: rgba(255,255,255,0.7);
-}
+    .subtitle{
+        font-size: .8em;
+    }
 
-.thumbnail:hover img{
-    opacity: 0.3;
-}
+    .bodyPanel .col-md-9{
+        position: absolute;
+        right: 0;
+        height: auto;
+    }
 
-.thumbnail:hover p{
-    margin-left: 1%;
-    opacity: 1;
-}
+    .col-md-9 img{
+        width: 100%;
+        height: auto;
+    }
 
-.thumbnailInfo{
-    position: absolute;
-    opacity: 0;
-    bottom: 1em;
-    font-size: 2em;
-    text-align: left;
-    margin: 0;
-    color: solid black;
-}
+    .container {
+       padding: 0;
+       margin: 0;
+    }
 
-.thumbnailTags{
-    position: absolute;
-    bottom: 0 !important;
-    opacity: 0;
-    margin: 0;
-}
+/*----masonry  home page ----*/
+    .tab-content {
+        padding-top: 3%;
+    }
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-bottom: 3% !important;
+    }
 
-#scrollTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-}
+    .thumbnail {
+        opacity: 1;
+        /*background: black !important;*/
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        border-radius: .5em !important;
+        border: dashed;
+    }
 
-#scrollTopBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-/*navbar styling*/
-.navbar{
-    background-color: #fff;
-    border-bottom: .15em solid #33000d;
-    margin-bottom: 0;
-}
+    .thumbnail img{
+        border-radius: .5em !important;
+    }
 
-.container{
-    padding: 0;
-    margin: auto;
-    width: 100%;
-    overflow: hidden;
-}
+    .thumbnailTitle {
+        position: absolute;
+        top: 0;
+        padding: 2%;
+        margin: 2%;
+        border-radius: .5em;
+        border: 1px dotted #b2b2b2;
+    }
 
-.container .navbar-header {
-    padding: 0.25% 0 0 1%;
-    margin: auto;
-}
-
-.container .navbar-right {
-    padding: 0.25% 1% 0 0;
-    margin: auto;
-}
-
-.row p{
-   margin-left: 7%;
-   margin-right: auto;
-}
-
-.row h4{
-   margin-left: 11%;
-   margin-right: auto;
-}
-
-.row #indented{
-   margin-left: 11%;
-   margin-right: auto; 
-}
-
-.row img{
-    margin-right: 0;
-    margin-right: auto;
-}
-
-.row h3{
-    margin-left: 2%;
-    margin-right: auto;
-}
-
-/*Changing color for the button*/
-button.navbar-toggle{
-    background:transparent;
-    border-color:transparent;
-    margin-bottom: 1%;
-}
-
-button.navbar-toggle span{
-   background:#3c3c3c;
-   opacity: 0.8;
-}
-
-/*modifies styling of navbar left */
-.navbar-brand {
-    font-family: 'Amiko', sans-serif;   
-    color: #33000d;
-    font-weight: 400;
-    font-size: 2.5em;  
-}
-
-a.navbar-brand:hover{
-    font-weight: bold;
-    border-bottom: .05em solid #33000d;
-    color: #000;
-}
-
-/*modifies styling of navbar right */
-    .navbar-right a{
-        font-family: 'Amiko', sans-serif;   
-        color: #3c3c3c;
-        font-weight: 400;
+    h3.thumbnailTitle{
+        background-color: rgba(255,255,255,0.7);
+        color: #000;
         font-size: 1.1em;
-        text-transform: uppercase;
     }
 
-    .nav li a{
+    .thumbnail:hover img{
+        opacity: 0.3;
+    }
+
+    .thumbnail:hover p{
+        margin-left: 1%;
+        opacity: 1;
+        color: #494949;
+        font-size: .9em;
+    }
+
+    .thumbnailInfo{
+        position: absolute;
+        opacity: 0;
+        top: 3em;
+        text-align: left;
+        margin: 0 !important;
+        padding-left: 3%;
+    }
+
+    #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #b2b2b2; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 7px 12px 7px 12px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    #scrollTopBtn:hover {
+        background-color: #4f575b; /* Add a dark-grey background on hover */
+    }
+
+/*navbar styling on top*/
+    .navbar{
+        background-color: #fff;
+        border-bottom: .15em solid #33000d;
         margin-bottom: 0;
-        margin-top:0;
     }
 
-    .nav li a:hover{
-        background-color: transparent;
+    .navbar-inverse{
+        background-color: #fff !important;
+    }
+
+    .navbar-fixed-top{
+        position: absolute !important;
+        padding: 0 !important;
+    }
+    /*FOR ACTIVE TAB ON TOP*/
+    .navbar-inverse .navbar-nav>.active>a{
+        background: rgba(0,0,0,0.1) !important;
+        text-transform: uppercase;
+        font-weight: 800;
+        color:#000 !important;
+    }
+
+    .navbar-inverse .navbar-nav>li>a{
+        color: #000 !important;
+    }
+
+    .navbar-inverse .navbar-brand{
+        color: #000 !important;
+    }
+
+    .container{
+        padding: 0;
+        margin: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .container .navbar-header {
+        padding: 0.25% 0 0 1%;
+        margin: auto;
+    }
+
+    .container .navbar-right {
+        padding: 0.25% 1% 0 0;
+        margin: auto;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar{
+        background-color: #5E5E5E !important;
+    }
+
+    .row p{
+       margin-left: 7%;
+       margin-right: auto;
+    }
+
+    .row h4{
+       margin-left: 11%;
+       margin-right: auto;
+    }
+
+    .row #indented{
+       margin-left: 11%;
+       margin-right: auto; 
+    }
+
+    .row img{
+        margin-right: 0;
+        margin-right: auto;
+    }
+
+    .row h3{
+        margin-left: 2%;
+        margin-right: auto;
+    }
+
+    /*Changing color for the button*/
+    button.navbar-toggle{
+        background:transparent;
+        border-color:transparent;
+        margin-bottom: 1%;
+    }
+
+    button.navbar-toggle span{
+       background:#3c3c3c;
+       opacity: 0.8;
+    }
+
+    /*modifies styling of navbar left */
+    .navbar-brand {
+        color: #33000d;
+        font-weight: 400;
+        font-size: 2.5em;  
+    }
+
+    a.navbar-brand:hover{
         font-weight: bold;
-        color: #000;
         border-bottom: .05em solid #33000d;
+        color: #000;
     }
 
-/* collapsed menu*/
-    .navbar-nav {
-        color: #000;
-        text-align: center;
-    }
+    /*modifies styling of navbar right */
+        .navbar-right a{
+            font-family: 'Amiko', sans-serif;   
+            color: #3c3c3c;
+            font-weight: 400;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        .nav li a{
+            margin-bottom: 0;
+            margin-top:0;
+        }
+
+        .nav li a:hover{
+            background-color: transparent;
+            font-weight: bold;
+            color: #000;
+            border-bottom: .05em solid #33000d;
+        }
+
+    /* collapsed menu*/
+        .navbar-nav {
+            color: #000;
+            text-align: center;
+        }
 
 
 /*General style*/
 
 /*individual pages style*/
-    h3 {
-        font-family: 'Amiko', sans-serif; 
-        font-weight: 500;
-        font-size: 2.3em;
-        text-align: left;
-        padding: 1.5% 0 0 0; 
-        color: #252525;
-    }
-
     p {
         font-family: 'Montserrat', sans-serif; 
         font-weight: 400;
@@ -204,30 +264,6 @@ a.navbar-brand:hover{
         text-align: left;
         padding: 0 0 0 0; 
         color: #4d4d4d;
-    }
-
-    h4 {
-        font-family: 'Amiko', sans-serif; 
-        font-weight: 500;
-        font-size: 1.2em;
-        text-align: left;
-        padding: 1.5% 0 0 0; 
-        color: #252525;
-        text-transform: uppercase;
-    }
-
-    h4 img{
-        width: 100%;
-        height: auto;
-    }
-
-    p.quote{
-        font-family: 'Amiko', sans-serif; 
-        font-weight: 400;
-        font-size: 3em;
-        text-align: center;
-        padding: 1.5% 0 0 0; 
-        color: #484848;
     }
 
 /*styles text that spans page to full bleed*/
