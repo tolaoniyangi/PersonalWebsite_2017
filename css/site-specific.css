@@ -5,22 +5,37 @@ body{
 }
 
 /*---- side panel ----*/
+ /*   .sidePanel .container .col-md-3 {
+       padding-left: 6% !important;
+    }
+
+    .col-md-9 img{
+       padding-right: 8% !important;
+    }*/
+
     .sidePanel .col-md-3{
         position: absolute;
         display: block;
         left: 0;
-        padding: 2% !important;
+        padding: 0 2% 2% 2% !important;
     }
 
-    .tab-content .col-md-4{
-
-    }
-
-    .sidePanel .col-md-3 h3{
+    .sidePanel .col-md-3 h1{
         text-align: left;
         margin: 0;
+        font-size: 1.6em;
         padding-left: 4%;
         padding-bottom: 2%;
+        color: rgba(39,52,52,.8);
+    }
+
+    .sidePanel .col-md-3 h2{
+        text-align: left;
+        margin: 0;
+        font-size: 1.2em;
+        padding-left: 4%;
+        padding-bottom: 2%;
+        color: rgba(0,0,0,1);
     }
 
     .sidePanel .col-md-3 p{
@@ -28,10 +43,12 @@ body{
         margin: 0;
         padding-left: 4%;
         padding-bottom: 1%;
+        color: rgba(39,52,52,.75);
     }
 
     .additionalInfo{
-        font-size: .8em;
+        font-size: .85em;
+        color: rgba(39,52,52,.5) !important;
     }
 
     .bodyPanel .col-md-9{
@@ -43,11 +60,6 @@ body{
     .col-md-9 img{
         width: 100%;
         height: auto;
-    }
-
-    .container {
-       padding: 0;
-       margin: 0;
     }
 
 /*----masonry  home page ----*/
@@ -70,9 +82,7 @@ body{
     .thumbnail img{
         border-radius: .5em !important;
     }
-    #colored img{
-        opacity: 0.5 !important;
-    }
+
 
     .thumbnailTitle {
         position: absolute;
@@ -157,19 +167,25 @@ body{
         .navbar-brand {
             color: #33000d;
             font-weight: 400;
-            font-size: 2.5em;  
+            font-size: 2.4em;  
+            text-transform: uppercase;
         }
-
         a.navbar-brand:hover{
             font-weight: bold;
             border-bottom: .05em solid #33000d;
             color: #000;
         }
+        a.navbar-brand{
+            line-height: .9em;
+        }
+        span.subtitle{
+            font-size: .55em;
+            text-transform: none;
+        }
 
         .nav.navbar-nav {
             padding-left: 0 !important; /*for padding for the projects, about, contact */
         }
-
         ul.nav.navbar-nav {
             float: right !important;
         }
@@ -216,15 +232,6 @@ body{
             border-bottom: none !important;
         }
 
-        a.navbar-brand{
-            line-height: .9em;
-        }
-
-        span.subtitle{
-            font-size: .5em;
-            text-transform: uppercase;
-        }
-
         .container{
             padding: 0;
             margin: auto;
@@ -266,168 +273,13 @@ body{
             border-bottom: .05em solid #33000d;
         }
 
-/*General style*/
 
-/*individual pages style*/
-    p {
-        font-family: 'Montserrat', sans-serif; 
-        font-weight: 400;
-        font-size: 1em;
-        text-align: left;
-        padding: 0 0 0 0; 
-        color: #4d4d4d;
-    }
-
-/*styles text that spans page to full bleed*/
-    .col-md-12 p{
-        padding-right: 25%;
-        text-align: left;
-        height: auto;
-    }
-
-    /*sizes images*/
-    .col-md-2 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-    .col-md-4 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-    .col-md-5 img{
-        width: 82%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-    .col-md-6 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-    .col-md-8 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-
-    .col-md-10 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0; 
-    }
-    .col-md-12 img{
-        width: 100%;
-        height: auto;
-        padding: 0 0 0 0;
-    }
-
-    #homeimage img{
-        padding: 0;
-        margin: auto;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    /*landing page style*/
-    /*adds background to text*/
-    .backgroundcliptext .index-link-styling a,p{
-        background-color: transparent;
-        font-weight: bold;
-        color: #000;
-    }
-
-    .index-link-styling a:hover{
-        background-color: transparent;
-        font-weight: bold;
-        color: #000;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: url(../img/background_text.png);
-        text-decoration: none;
-        border-image: url(../img/background_text.png) 25 30 10 20 repeat;
-    }
-
-/*styling for entire title page basically*/
-    .title{
-        padding: 20% 0 20% 1%; /* top|right|bottom|left */ 
-        margin: auto;
-        max-height: 100%;
-        vertical-align: center;
-    }
-
-    h1 {
-        font-weight: 200;
-        color: #545454;
-        font-size: 1.05em;
-        text-align: left;
-        line-height: 8%;
-        padding-top: 1%;
-    }
-
-    h1#footer{
-        font-size: .75em;
-        color: #a9a9a9;
-        font-weight: 100;
-        bottom: .5em;
-        position: absolute;
-        text-transform: uppercase;
-    }
-
-    p.index-link-styling{
-        font-weight: 800;
-        font-size: 5em;
-        text-align: left;
-        line-height: 0.85em;
-    }
-
-    a#indexLinkSmall{
-        font-weight: 500;
-        font-size: 2em;
-        text-align: left;
-        line-height: 1.3em;
-        color: #000;
-        padding-top: 1%;
-    }
-
-    h2 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1em;
-        color: #C3C0C0;
-        bottom: 0%;
-        margin-top: 1em;
-    }
-
-
-/* responsive styling for font size in landing page*/
-    @media screen and (max-width: 1000px) {
-        h1 {
-            font-size: 8em;
+/* responsive styling for project page*/
+    @media screen and (max-width: 991px) {
+        .sidePanel .col-md-3{
+            position: relative;
         }
-
-        p.index-link-styling{
-            font-size: 4em;
-        }
-    }
-
-    @media screen and (max-width: 815px) {
-        h1 {
-            font-size: 6em;
-        }
-        
-        p.index-link-styling{
-            font-size: 3em;
-        }
-    }
-
-    @media screen and (max-width: 615px) {
-        h1 {
-            font-size: 4em;
-        }
-        
-        p.index-link-styling{
-            font-size: 2em;
+        .bodyPanel .col-md-9{
+            position: relative;
         }
     }
