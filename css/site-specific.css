@@ -1,12 +1,6 @@
-/* fonts: 
-font-family: 'Roboto', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Wire One', sans-serif;
-font-family: 'Amiko', sans-serif; */
-
 body{
     font-family: 'Montserrat', sans-serif !important;
-    padding-top: 60px !important;
+    padding-top: 130px !important;
     font-size: 10px !important;
 }
 
@@ -86,29 +80,19 @@ body{
     }
 
     h3.thumbnailTitle{
-        background-color: rgba(228,240,246,0.5);
         color: #000;
         font-size: 1.1em;
+        opacity: 0;
     }
 
     .thumbnail:hover img{
         opacity: 0.3;
     }
 
-    .thumbnail:hover p{
+    .thumbnail:hover h3{
         margin-left: 1%;
         opacity: 1;
-        color: #494949;
-        font-size: .9em;
-    }
-
-    .thumbnailInfo{
-        position: absolute;
-        opacity: 0;
-        top: 3em;
-        text-align: left;
-        margin: 0 !important;
-        padding-left: 3%;
+        font-size: 1.1em;
     }
 
     #scrollTopBtn {
@@ -139,11 +123,6 @@ body{
         float: right !important;
     }
 
-    .navbar-header:hover{   
-        border-bottom: 1px solid !important;
-        border-bottom-color: rgba(39,52,52,.38) !important;
-    }
-
     .container .navbar-header, .collapse {
         padding: 0 0 0 1% !important;
         padding-top: 50px !important; /* pushes navbar down */
@@ -170,17 +149,14 @@ body{
         color: #9d9d9d !important;
         border-bottom: 1px solid;
         border-bottom-color: #9d9d9d !important;
+        /*border-bottom: none !important;*/
         background-color: transparent !important;
-    }
-
-    .navbar-inverse .navbar-nav>a:hover{
-        /*background: rgba(0,0,0,0.1) !important;*/
-        border-bottom-color: #f9f9f9 !important;
-        border-bottom: 1px solid;
     }
 
     .navbar-inverse .navbar-nav>li>a{
         color: rgba(39,52,52,.38) !important;
+        padding-bottom: 5px !important;
+        border-bottom-color: rgba(39,52,52,.18)  !important;
     }
 
     .navbar-inverse .navbar-brand{

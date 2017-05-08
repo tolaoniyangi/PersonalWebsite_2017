@@ -51,145 +51,99 @@
 
   <!-- actual page with masonry layout -->
    <div class="container main-container">
-    <div role="tabpanel">
-    <!-- Nav tabs for categories -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#panel-1" aria-controls="panel-1" role="tab" data-toggle="tab">ALL</a></li>
-        <li role="presentation"><a href="#panel-2" aria-controls="panel-2" role="tab" data-toggle="tab"> Visualization</a></li>
-        <li role="presentation"><a href="#panel-3" aria-controls="panel-3" role="tab" data-toggle="tab">Analysis</a></li>
-        <li role="presentation"><a href="#panel-4" aria-controls="panel-4" role="tab" data-toggle="tab">Design</a></li>
-      </ul>
+      <div class="row masonry-container">
+        <!-- change col-md-4 to change number of columns on page -->
+        <!-- airbnb -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail">
+            <a href="html/airbnb.html">
+              <img src="img/intro_Airbnb.png" alt="">
+              <h3 class="thumbnailTitle"> Airbnb Analysis </h3>
+            </a> 
+          </div>
+        </div><!--/.item  -->
 
-    <!-- Tab panes - contains content of page  -->
-      <div class="tab-content">
-        <!-- tab-pane active here makes it the very first thing - so if i just populate everything with the whole entire thing and call this tab ALL then i will be good! Whoop -->
-        <div role="tabpanel" class="tab-pane active" id="panel-1">
-          <div class="row masonry-container">
-            <!-- change col-md-4 to change number of columns on page -->
-            <!-- airbnb -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail">
-                <a href="html/airbnb.html">
-                  <img src="img/intro_Airbnb.png" alt="">
-                  <h3 class="thumbnailTitle"> Airbnb Analysis </h3>
-                  <p class="thumbnailInfo"> Neighborhood Identity in New York City</p>
-                </a> 
-              </div>
-            </div><!--/.item  -->
+        <!-- GIS final report -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_CitiBike.png" alt="">
+              <h3 class="thumbnailTitle"> Citi Bike Accessibility </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- GIS final report -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_CitiBike.png" alt="">
-                  <h3 class="thumbnailTitle"> Citi Bike Accessibility </h3>
-                  <p class="thumbnailInfo"> How accessible is the Citi Bike network to New York City residents?</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- Logo Design for Tolu  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_LogoTheRead.png" alt="">
+              <h3 class="thumbnailTitle"> The Read </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- Logo Design for Tolu  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_LogoTheRead.png" alt="">
-                  <h3 class="thumbnailTitle"> The Read </h3>
-                  <p class="thumbnailInfo"> Logo design for a book club</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- MCDA GIS  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_MCDA_GIS.png" alt="">
+              <h3 class="thumbnailTitle"> Siting Libraries </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- MCDA GIS  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_MCDA_GIS.png" alt="">
-                  <h3 class="thumbnailTitle"> Siting Libraries </h3>
-                  <p class="thumbnailInfo"> suitability, mcda </p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- Visualization critique datavis  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_DataSketchesCritique.png" alt="">
+              <h3 class="thumbnailTitle"> more abt web design here </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- Visualization critique datavis  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_DataSketchesCritique.png" alt="">
-                  <h3 class="thumbnailTitle"> more abt web design here </h3>
-                  <p class="thumbnailInfo"> this is more info</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- DMC  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_DMC2.png" alt="">
+              <h3 class="thumbnailTitle"> Sprawl </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- DMC  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_DMC2.png" alt="">
-                  <h3 class="thumbnailTitle"> Sprawl </h3>
-                  <p class="thumbnailInfo"> Predicting urban sprawl through machine learning</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- LIBRARY  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_Library.png" alt="">
+              <h3 class="thumbnailTitle"> Library </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- LIBRARY  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_Library.png" alt="">
-                  <h3 class="thumbnailTitle"> Library </h3>
-                  <p class="thumbnailInfo"> this is more info</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
+        <!-- DATASCAPES  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_Flatbush.png" alt="">
+              <h3 class="thumbnailTitle"> Neighborhood Feel </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
 
-            <!-- DATASCAPES  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_Flatbush.png" alt="">
-                  <h3 class="thumbnailTitle"> Neighborhood Feel </h3>
-                  <p class="thumbnailInfo"> talk about narrative aspect</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
-
-            <!-- BRIDGE  -->
-            <div class="col-md-4 col-sm-6 item">
-              <div class="thumbnail"> 
-                <a href="html/projectPage.html">
-                  <img src="img/intro_Bridge2.png" alt="">
-                  <h3 class="thumbnailTitle"> Bridge </h3>
-                  <p class="thumbnailInfo"> this is more info</p>
-                </a>
-              </div>
-            </div><!--/.item  -->
-          </div> <!--/.masonry-container  -->
-        </div><!--/.tab-panel -->
-        <!-- NEW PANEL/TAB -->
-        <div role="tabpanel" class="tab-pane" id="panel-2">
-          <div class="row masonry-container">
-
-          </div> <!--/.masonry-container  -->
-        </div><!--/.tab-panel -->
-
-        <!-- NEW PANEL/TAB -->
-        <div role="tabpanel" class="tab-pane" id="panel-3">
-          <div class="row masonry-container">
-
-            
-          </div> <!--/.masonry-container  -->
-        </div><!--/.tab-panel -->
-
-        <!-- NEW PANEL/TAB -->
-        <div role="tabpanel" class="tab-pane" id="panel-4">
-          <div class="row masonry-container">
-
-            
-          </div> <!--/.masonry-container  -->
-        </div><!--/.tab-panel -->
-      </div> <!--/.tab-content -->
-    </div> <!--/.tab-panel  -->
+        <!-- BRIDGE  -->
+        <div class="col-md-4 col-sm-6 item">
+          <div class="thumbnail"> 
+            <a href="html/projectPage.html">
+              <img src="img/intro_Bridge2.png" alt="">
+              <h3 class="thumbnailTitle"> Bridge </h3>
+            </a>
+          </div>
+        </div><!--/.item  -->
+      </div> <!--/.masonry-container  -->
+    </div><!--/.tab-panel -->
   </div><!-- /.container -->
   <!-- end of masonry grid -->
   
