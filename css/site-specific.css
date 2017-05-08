@@ -30,7 +30,7 @@ body{
         padding-bottom: 1%;
     }
 
-    .subtitle{
+    .additionalInfo{
         font-size: .8em;
     }
 
@@ -69,6 +69,9 @@ body{
 
     .thumbnail img{
         border-radius: .5em !important;
+    }
+    #colored img{
+        opacity: 0.5 !important;
     }
 
     .thumbnailTitle {
@@ -115,131 +118,140 @@ body{
     }
 
 /*navbar styling on top*/
-    .nav.navbar-nav {
-        padding-left: 0 !important; /*for padding for the projects, about, contact */
-    }
-
-    ul.nav.navbar-nav {
-        float: right !important;
-    }
-
-    .container .navbar-header, .collapse {
-        padding: 0 0 0 1% !important;
-        padding-top: 50px !important; /* pushes navbar down */
-    }
-
-    .navbar{
-        background-color: #fff;
-        margin-bottom: 0;
-        border-bottom: 0 !important;
-    }
-
-    .navbar-inverse{
-        background-color: #fff !important;
-    }
-
-    .navbar-fixed-top{
-        position: absolute !important;
-        padding: 0 !important;
-    }
-    /*FOR ACTIVE TAB ON TOP*/
-    .navbar-inverse .navbar-nav>.active>a{
-        text-transform: none;
-        font-weight: 800;
-        color: #9d9d9d !important;
-        border-bottom: 1px solid;
-        border-bottom-color: #9d9d9d !important;
-        /*border-bottom: none !important;*/
-        background-color: transparent !important;
-    }
-
-    .navbar-inverse .navbar-nav>li>a{
-        color: rgba(39,52,52,.38) !important;
-        padding-bottom: 5px !important;
-        border-bottom-color: rgba(39,52,52,.18)  !important;
-    }
-
-    .navbar-inverse .navbar-brand{
-        color: #000 !important;
-    }
-
-    .container{
-        padding: 0;
-        margin: auto;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .container .navbar-header {
-        padding: 0.25% 0 0 1%;
-        margin: auto;
-    }
-
-    .container .navbar-right {
-        padding: 0.25% 1% 0 0;
-        margin: auto;
-    }
-    .navbar-inverse .navbar-toggle .icon-bar{
-        background-color: #5E5E5E !important;
-    }
-
-    .row p{
-       margin-left: 7%;
-       margin-right: auto;
-    }
-
-    .row h4{
-       margin-left: 11%;
-       margin-right: auto;
-    }
-
-    .row #indented{
-       margin-left: 11%;
-       margin-right: auto; 
-    }
-
-    .row img{
-        margin-right: 0;
-        margin-right: auto;
-    }
-
-    .row h3{
-        margin-left: 2%;
-        margin-right: auto;
-    }
-
     /*Changing color for the button*/
-    button.navbar-toggle{
-        background:transparent;
-        border-color:transparent;
-        margin-bottom: 1%;
-    }
+        button.navbar-toggle{
+            background:transparent;
+            margin-bottom: 1%;
+        }
 
-    button.navbar-toggle span{
-       background:#3c3c3c;
-       opacity: 0.8;
-    }
+        button.navbar-toggle:hover{
+            background-color: rgba(73,73,73,0.3) !important;
+            margin-bottom: 1%;
+        }
 
-    /*modifies styling of navbar left */
-    .navbar-brand {
-        color: #33000d;
-        font-weight: 400;
-        font-size: 2.5em;  
-    }
+        button.navbar-toggle:focus{
+            background-color: rgba(73,73,73,0.6) !important;
+            margin-bottom: 1%;
+        }
 
-    a.navbar-brand:hover{
-        font-weight: bold;
-        border-bottom: .05em solid #33000d;
-        color: #000;
-    }
+        /*for the lines in the middle*/
+        button.navbar-toggle span{
+           background:#ebebeb;
+           opacity: 0.8;
+        }
+
+    /* collapsed menu*/
+        .navbar-nav {
+            color: #000;
+            text-align: center;
+        }
+
+        .navbar-inverse .navbar-collapse {
+            overflow: hidden;
+            padding:0;
+            padding-right: 40px;
+            border: none !important;
+        }
+
+    /*modifies styling of navbar total */
+        .navbar-brand {
+            color: #33000d;
+            font-weight: 400;
+            font-size: 2.5em;  
+        }
+
+        a.navbar-brand:hover{
+            font-weight: bold;
+            border-bottom: .05em solid #33000d;
+            color: #000;
+        }
+
+        .nav.navbar-nav {
+            padding-left: 0 !important; /*for padding for the projects, about, contact */
+        }
+
+        ul.nav.navbar-nav {
+            float: right !important;
+        }
+
+        .container .navbar-header, .navbar-nav {
+            padding: 0 0 0 1% !important;
+            padding-top: 50px !important; /* pushes navbar down */
+        }
+
+        .navbar{
+            background-color: #fff;
+            margin-bottom: 0;
+            border-bottom: 0 !important;
+        }
+
+        .navbar-inverse{
+            background-color: #fff !important;
+        }
+
+        .navbar-fixed-top{
+            position: absolute !important;
+            padding: 0 !important;
+        }
+        /*FOR ACTIVE TAB ON TOP*/
+        .navbar-inverse .navbar-nav>.active>a{
+            text-transform: none;
+            font-weight: 800;
+            color: #9d9d9d !important;
+            border-bottom: 1px solid;
+            border-bottom-color: #9d9d9d !important;
+            /*border-bottom: none !important;*/
+            background-color: transparent !important;
+        }
+
+        .navbar-inverse .navbar-nav>li>a{
+            color: rgba(39,52,52,.38) !important;
+            padding-bottom: 5px !important;
+            border-bottom-color: rgba(39,52,52,.18)  !important;
+        }
+
+        .navbar-inverse .navbar-header>a{
+            color: rgba(39,52,52,.9) !important;
+            padding-bottom: 5px !important;
+            border-bottom: none !important;
+        }
+
+        a.navbar-brand{
+            line-height: .9em;
+        }
+
+        span.subtitle{
+            font-size: .5em;
+            text-transform: uppercase;
+        }
+
+        .container{
+            padding: 0;
+            margin: auto;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container .navbar-header {
+            padding: 0.25% 0 0 1%;
+            margin: auto;
+        }
+
+        .container .navbar-right {
+            padding: 0.25% 1% 0 0;
+            margin: auto;
+        }
 
     /*modifies styling of navbar right */
         .navbar-right a{
-            font-family: 'Amiko', sans-serif;   
             color: #3c3c3c;
             font-weight: 400;
             font-size: 1.1em;
             text-transform: uppercase;
+        }
+
+        .navbar-inverse .navbar-toggle .icon-bar{
+            background-color: #5E5E5E !important;
         }
 
         .nav li a{
@@ -253,13 +265,6 @@ body{
             color: #000;
             border-bottom: .05em solid #33000d;
         }
-
-    /* collapsed menu*/
-        .navbar-nav {
-            color: #000;
-            text-align: center;
-        }
-
 
 /*General style*/
 
