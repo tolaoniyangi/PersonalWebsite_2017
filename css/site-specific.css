@@ -4,64 +4,6 @@ body{
     font-size: 10px !important;
 }
 
-/*---- side panel ----*/
- /*   .sidePanel .container .col-md-3 {
-       padding-left: 6% !important;
-    }
-
-    .col-md-9 img{
-       padding-right: 8% !important;
-    }*/
-
-    .sidePanel .col-md-3{
-        position: absolute;
-        display: block;
-        left: 0;
-        padding: 0 2% 2% 2% !important;
-    }
-
-    .sidePanel .col-md-3 h1{
-        text-align: left;
-        margin: 0;
-        font-size: 1.6em;
-        padding-left: 4%;
-        padding-bottom: 2%;
-        color: rgba(39,52,52,.8);
-    }
-
-    .sidePanel .col-md-3 h2{
-        text-align: left;
-        margin: 0;
-        font-size: 1.2em;
-        padding-left: 4%;
-        padding-bottom: 2%;
-        color: rgba(0,0,0,1);
-    }
-
-    .sidePanel .col-md-3 p{
-        text-align: left;
-        margin: 0;
-        padding-left: 4%;
-        padding-bottom: 1%;
-        color: rgba(39,52,52,.75);
-    }
-
-    .additionalInfo{
-        font-size: .85em;
-        color: rgba(39,52,52,.5) !important;
-    }
-
-    .bodyPanel .col-md-9{
-        position: absolute;
-        right: 0;
-        height: auto;
-    }
-
-    .col-md-9 img{
-        width: 100%;
-        height: auto;
-    }
-
 /*----masonry  home page ----*/
     .tab-content {
         padding-top: 3%;
@@ -273,6 +215,63 @@ body{
             border-bottom: .05em solid #33000d;
         }
 
+/*------project pages------*/
+  /*---- side panel ----*/
+    .sidePanel .col-md-3{
+        position: absolute;
+        display: block;
+        left: 0;
+        padding: 0 2% 2% 2% !important;
+    }
+
+    .sidePanel .col-md-3 h1{
+        text-align: left;
+        margin: 0;
+        font-size: 1.6em;
+        padding-left: 4%;
+        padding-bottom: 2%;
+        color: rgba(39,52,52,.8);
+    }
+
+    .sidePanel .col-md-3 h2{
+        text-align: left;
+        margin: 0;
+        font-size: 1.2em;
+        padding-left: 4%;
+        padding-bottom: 2%;
+        color: rgba(0,0,0,1);
+    }
+
+    .sidePanel .col-md-3 p{
+        text-align: left;
+        margin: 0;
+        padding-left: 4%;
+        padding-bottom: 1%;
+        color: rgba(39,52,52,.75);
+    }
+
+    .additionalInfo {
+        font-size: .9em;
+        color: rgba(39,52,52,.6) !important;
+    }
+
+    .bodyPanel .col-md-9{
+        position: absolute;
+        right: 0;
+        height: auto;
+    }
+
+    .col-md-9 img{
+        width: 100%;
+        height: auto;
+    }
+
+/*------About Page------*/
+    .container .row .col-md-6 a, p{
+        float: right;
+        clear: both;
+        margin-bottom: 0 !important;
+    }
 
 /* responsive styling for project and home pages*/
     @media screen and (max-width: 991px) {
