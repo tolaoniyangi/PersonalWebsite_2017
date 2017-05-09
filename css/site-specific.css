@@ -227,7 +227,7 @@ body{
     .sidePanel .col-md-3 h1{
         text-align: left;
         margin: 0;
-        font-size: 1.6em;
+        font-size: 1.1em;
         padding-left: 4%;
         padding-bottom: 2%;
         color: rgba(39,52,52,.8);
@@ -236,7 +236,7 @@ body{
     .sidePanel .col-md-3 h2{
         text-align: left;
         margin: 0;
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding-left: 4%;
         padding-bottom: 2%;
         color: rgba(0,0,0,1);
