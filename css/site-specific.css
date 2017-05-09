@@ -216,7 +216,7 @@ body{
         }
 
 /*------project pages------*/
-  /*---- side panel ----*/
+/*---- side panel ----*/
     .sidePanel .col-md-3{
         position: absolute;
         display: block;
@@ -254,7 +254,7 @@ body{
         font-size: .9em;
         color: rgba(39,52,52,.6) !important;
     }
-
+/*-----body panel -----*/
     .bodyPanel .col-md-9{
         position: absolute;
         right: 0;
@@ -264,6 +264,14 @@ body{
     .col-md-9 img{
         width: 100%;
         height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .col-md-9 iframe{
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 /*------About Page------*/
@@ -274,6 +282,7 @@ body{
     }
 
 /* responsive styling for project and home pages*/
+    /*medium screen*/
     @media screen and (max-width: 991px) {
         .sidePanel .col-md-3{
             position: relative;
@@ -282,7 +291,7 @@ body{
             position: relative;
         }
     }
-
+    /*ipad*/
     @media screen and (max-width: 767px) {
         .container.main-container {
             display: table;
@@ -298,4 +307,43 @@ body{
         }
     }
 
-
+    /*really big*/
+    @media screen and (max-width: 1200px) {
+        .col-md-9 iframe{
+            width:1280px;
+            height: 720px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .col-md-9 iframe{
+            width:640px;
+            height: 360px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .col-md-9 iframe{
+            width:560px;
+            height:315px;
+        }
+    }
+    /*iphone 6 plus*/
+    @media screen and (max-width: 414px) {
+        .col-md-9 iframe{
+            width:400px;
+            height:225px;
+        }
+    }
+    /*iphone 6*/
+    @media screen and (max-width: 375px) {
+        .col-md-9 iframe{
+            width:350px;
+            height:197px;
+        }
+    }
+    /*iphone 5*/
+    @media screen and (max-width: 320px) {
+        .col-md-9 iframe{
+            width:300px;
+            height:169px;
+        }
+    }
