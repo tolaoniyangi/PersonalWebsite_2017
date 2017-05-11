@@ -4,6 +4,14 @@ body{
     font-size: 10px !important;
 }
 
+.footer p{
+    position: relative;
+    bottom: 0;
+    padding: 5%;
+    color: #A9A9A9;
+    font-size: .8em;
+}
+
 /*----masonry  home page ----*/
     .tab-content {
         padding-top: 3%;
