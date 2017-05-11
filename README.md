@@ -1,4 +1,5 @@
 # PersonalWebsite_2017 
-portfolio website 
-tola oniyangi 
-columbia gsapp
+portfolio website by/for tola oniyangi
+<br>
+student at Columbia GSAPP 
+
