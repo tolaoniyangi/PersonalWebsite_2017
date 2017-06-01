@@ -306,6 +306,11 @@ body{
         clear: both;
         margin-bottom: 0 !important;
     }
+    span.highlightInfo{
+        border-bottom: 0.5px dotted #337ab7;
+        font-weight: 800;
+        color: black;
+    }
 
 /* responsive styling for project and home pages*/
     /*medium screen*/
