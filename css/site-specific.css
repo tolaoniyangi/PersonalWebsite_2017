@@ -26,7 +26,8 @@ body{
         margin-bottom: 0 !important;
         padding: 0 !important;
         border-radius: .5em !important;
-        border: 0.25px dotted #337ab7 !important;
+        border: 0.1em dotted rgba(51,122,183,0.5) !important;
+        border-opacity: .5;
     }
 
     .thumbnail img{
