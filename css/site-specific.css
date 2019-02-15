@@ -39,8 +39,8 @@ body{
         }
 
         .thumbnail #vis{
-            border: 0.1em dotted rgba(51,122,183,1) ;/*blue*/
-            background: rgba(51,122,183,.2);
+            border: 0.1em dotted rgba(0,204,255,1) ;/*blue*/
+            background: rgba(0,204,255,.4);
         }
 
     .thumbnail img{
@@ -48,7 +48,7 @@ body{
     }
 
 
-    .thumbnailTitle {
+    .thumbnailQuestion{
         position: absolute;
         top: 0;
         padding: 2%;
@@ -57,19 +57,32 @@ body{
     }
 
     h3.thumbnailTitle{
-        color: #000;
-        font-size: 1.1em;
+        color: rgba(0,0,0,.5);
+        font-size: 1.3em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2% 2% 2% 2%;
+    }
+    h4.thumbnailQuestion{
+        color:  rgba(0,0,0,.6);
+        font-size: 1.7em;
         opacity: 0;
+        font-weight: 800;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%); /*left, bottom*/  
+        text-align: center;
+        line-height: 200%;
     }
 
     .thumbnail:hover img{
         opacity: 0.3;
     }
 
-    .thumbnail:hover h3{
-        margin-left: 1%;
+    .thumbnail:hover h4{
         opacity: 1;
-        font-size: 1.1em;
     }
 
     #scrollTopBtn {
@@ -147,6 +160,7 @@ body{
             font-size: .75em;
             font-weight: 1000;
             text-transform: none;
+            line-height: : 200%;
         }
 
         span.subtitle #analysis{
@@ -169,7 +183,7 @@ body{
         }
 
         .container .navbar-header, .navbar-nav {
-            padding: 0 0 0 1% !important;
+            padding: 0 0 1% 1% !important;
             padding-top: 50px !important; /* pushes navbar down */
         }
 
