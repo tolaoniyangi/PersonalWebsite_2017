@@ -22,13 +22,26 @@ body{
 
     .thumbnail {
         opacity: 1;
-        /*background: black !important;*/
         margin-bottom: 0 !important;
         padding: 0 !important;
         border-radius: .5em !important;
-        border: 0.1em dotted rgba(51,122,183,0.5) !important;
+       /* border: 0.1em dotted rgba(51,122,183,0.5) !important*/;
         border-opacity: .5;
     }
+        .thumbnail #analysis{
+            border: 0.1em dotted rgba(193,0,50,1) ;/*red*/
+            background: rgba(193,0,50,.2);
+        }
+
+        .thumbnail #design{
+            border: 0.1em dotted rgba(150,0,205,1) ; /*purple*/
+            background: rgba(150,0,205,.2);
+        }
+
+        .thumbnail #vis{
+            border: 0.1em dotted rgba(51,122,183,1) ;/*blue*/
+            background: rgba(51,122,183,.2);
+        }
 
     .thumbnail img{
         border-radius: .5em !important;
@@ -130,9 +143,23 @@ body{
             line-height: .9em;
         }
         span.subtitle{
-            font-size: .55em;
+/*          font-size: .55em;*/
+            font-size: .75em;
+            font-weight: 1000;
             text-transform: none;
         }
+
+        span.subtitle #analysis{
+            color: rgba(193,0,50,1);/*red*/
+            }
+
+        span.subtitle #design{
+            color: rgba(150,0,205,1);/*purple*/
+            }
+
+        span.subtitle #vis{
+            color: rgba(51,122,183,1);/*blue*/
+            }
 
         .nav.navbar-nav {
             padding-left: 0 !important; /*for padding for the projects, about, contact */
