@@ -41,9 +41,12 @@ body{
         }
 
         .thumbnail #vis{
-            border: 0.1em dotted rgba(0,204,255,1) ;/*blue*/
+         /*   border: 0.1em dotted rgba(0,204,255,1) ;
             background: rgba(0,204,255,.4);
-            border-radius: .5em !important;
+            border-radius: .5em !important;*/
+            border: 0.1em dotted rgba(193,0,50,1) ;/*red*/
+            background: rgba(193,0,50,.2);
+            border-radius: .5em !important;        
         }
 
     .thumbnail img{
