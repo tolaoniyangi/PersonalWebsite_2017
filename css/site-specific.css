@@ -64,12 +64,13 @@ body{
     }
     h4.thumbnailQuestion{
         color:  rgba(0,0,0,.6);
-        font-size: 1.5em;
+        font-size: 1.4em;
         opacity: 0;
-        font-weight: 800;
+        font-weight: 1000;
+        text-transform: bold;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -60%); /*left, bottom*/  
+        transform: translate(-50%, -65%); /*left, bottom*/  
         text-align: center;
         line-height: 150%;
     }
@@ -266,7 +267,7 @@ body{
 /*------project pages------*/
 /*---- side panel ----*/
     .sidePanel .col-md-3{
-        position: absolute;
+        position: fixed;
         display: block;
         left: 0;
         padding: 0 2% 2% 2% !important;
