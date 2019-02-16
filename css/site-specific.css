@@ -5,10 +5,12 @@ body{
 }
 
 .footer p{
-    position: absolute;
+    position: relative;
     bottom: 0;
+    left: 1%;
     color: #A9A9A9;
     font-size: .8em;
+    opacity: 0;
 }
 
 /*----masonry  home page ----*/
@@ -107,11 +109,11 @@ body{
             border-radius: .2em
         }
 
-        a.navbar-brand:hover{
+/*        a.navbar-brand:hover{
             font-weight: bold;
             border-bottom: .05em solid #33000d;
             color: #000;
-        }
+        }*/
 
         span.subtitle{
             font-size: .75em;
