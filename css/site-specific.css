@@ -24,23 +24,26 @@ body{
         opacity: 1;
         margin-bottom: 0 !important;
         padding: 0 !important;
-        border-radius: .5em !important;
+/*        border-radius: .5em !important;*/
        /* border: 0.1em dotted rgba(51,122,183,0.5) !important*/;
-        border-opacity: .5;
+        /*border-opacity: .5;*/
     }
         .thumbnail #analysis{
             border: 0.1em dotted rgba(193,0,50,1) ;/*red*/
             background: rgba(193,0,50,.2);
+            border-radius: .5em !important;            
         }
 
         .thumbnail #design{
             border: 0.1em dotted rgba(150,0,205,1) ; /*purple*/
             background: rgba(150,0,205,.2);
+            border-radius: .5em !important;
         }
 
         .thumbnail #vis{
             border: 0.1em dotted rgba(0,204,255,1) ;/*blue*/
             background: rgba(0,204,255,.4);
+            border-radius: .5em !important;
         }
 
     .thumbnail img{
