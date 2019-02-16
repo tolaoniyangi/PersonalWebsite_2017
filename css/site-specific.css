@@ -24,7 +24,7 @@ body{
         opacity: 1;
         margin-bottom: 0 !important;
         padding: 0 !important;
-/*        border-radius: .5em !important;*/
+        border: none;
        /* border: 0.1em dotted rgba(51,122,183,0.5) !important*/;
         /*border-opacity: .5;*/
     }
@@ -40,14 +40,6 @@ body{
             border-radius: .5em !important;
         }
 
-        .thumbnail #vis{
-         /*   border: 0.1em dotted rgba(0,204,255,1) ;
-            background: rgba(0,204,255,.4);
-            border-radius: .5em !important;*/
-            border: 0.1em dotted rgba(193,0,50,1) ;/*red*/
-            background: rgba(193,0,50,.2);
-            border-radius: .5em !important;        
-        }
 
     .thumbnail img{
         border-radius: .5em !important;
@@ -148,17 +140,18 @@ body{
     /*modifies styling of navbar total */
         .navbar-brand {
             color: #33000d;
-            font-weight: 400;
-            font-size: 2.4em;  
-            text-transform: uppercase;
+            font-weight: 1000;
+            font-size: 2.6em;  
+            /*padding-bottom: 10%;*/
         }
+
         a.navbar-brand:hover{
             font-weight: bold;
             border-bottom: .05em solid #33000d;
             color: #000;
         }
         a.navbar-brand{
-            line-height: .9em;
+            line-height: 1.2em;
         }
         span.subtitle{
 /*          font-size: .55em;*/
@@ -175,21 +168,22 @@ body{
         span.subtitle #design{
             color: rgba(150,0,205,1);/*purple*/
             }
-
-        span.subtitle #vis{
-            color: rgba(51,122,183,1);/*blue*/
-            }
+/*fixing the responsiveness/spacing for the navigation bar*/
+        .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+            display: none !important;
+            content: " ";
+        }   
 
         .nav.navbar-nav {
             padding-left: 0 !important; /*for padding for the projects, about, contact */
         }
         ul.nav.navbar-nav {
             float: right !important;
+            display: flex;
         }
 
         .container .navbar-header, .navbar-nav {
-            padding: 0 0 1% 1% !important;
-            padding-top: 50px !important; /* pushes navbar down */
+            padding: 3% 0 3% 1% !important;
         }
 
         .navbar{
@@ -237,7 +231,6 @@ body{
         }
 
         .container .navbar-header {
-            padding: 0.25% 0 0 1%;
             margin: auto;
         }
 
