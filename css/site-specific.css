@@ -5,9 +5,8 @@ body{
 }
 
 .footer p{
-    position: relative;
+    position: absolute;
     bottom: 0;
-    padding: 5%;
     color: #A9A9A9;
     font-size: .8em;
 }
