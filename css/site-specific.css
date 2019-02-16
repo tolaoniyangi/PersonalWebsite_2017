@@ -99,48 +99,13 @@ body{
         background-color: #4f575b; /* Add a dark-grey background on hover */
     }
 
-/*navbar styling on top*/
-    /*Changing color for the button*/
-        button.navbar-toggle{
-            background:transparent;
-            margin-bottom: 1%;
-        }
-
-        button.navbar-toggle:hover{
-            background-color: rgba(73,73,73,0.3) !important;
-            margin-bottom: 1%;
-        }
-
-        button.navbar-toggle:focus{
-            background-color: rgba(73,73,73,0.6) !important;
-            margin-bottom: 1%;
-        }
-
-        /*for the lines in the middle*/
-        button.navbar-toggle span{
-           background:#ebebeb;
-           opacity: 0.8;
-        }
-
-    /* collapsed menu*/
-        .navbar-nav {
-            color: #000;
-            text-align: center;
-        }
-
-        .navbar-inverse .navbar-collapse {
-            overflow: hidden;
-            padding:0;
-            padding-right: 40px;
-            border: none !important;
-        }
-
     /*modifies styling of navbar total */
         .navbar-brand {
-            color: #33000d;
             font-weight: 1000;
-            font-size: 2.6em;  
-            /*padding-bottom: 10%;*/
+            padding:1% 3% 6% 3% !important;
+            background-color: rgba(255,255,255,.5); 
+            position: fixed;
+            border-radius: .2em
         }
 
         a.navbar-brand:hover{
@@ -148,11 +113,8 @@ body{
             border-bottom: .05em solid #33000d;
             color: #000;
         }
-        a.navbar-brand{
-            line-height: 1.2em;
-        }
+
         span.subtitle{
-/*          font-size: .55em;*/
             font-size: .75em;
             font-weight: 1000;
             text-transform: none;
@@ -166,11 +128,6 @@ body{
         span.subtitle #design{
             color: rgba(150,0,205,1);/*purple*/
             }
-/*fixing the responsiveness/spacing for the navigation bar*/
-        .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
-            display: none !important;
-            content: " ";
-        }   
 
         .nav.navbar-nav {
             padding-left: 0 !important; /*for padding for the projects, about, contact */
@@ -198,26 +155,10 @@ body{
             position: absolute !important;
             padding: 0 !important;
         }
-        /*FOR ACTIVE TAB ON TOP*/
-        .navbar-inverse .navbar-nav>.active>a{
-            text-transform: none;
-            font-weight: 800;
-            color: #9d9d9d !important;
-            border-bottom: 1px solid;
-            border-bottom-color: #9d9d9d !important;
-            /*border-bottom: none !important;*/
-            background-color: transparent !important;
-        }
 
-        .navbar-inverse .navbar-nav>li>a{
-            color: rgba(39,52,52,.38) !important;
-            padding-bottom: 5px !important;
-            border-bottom-color: rgba(39,52,52,.18)  !important;
-        }
 
         .navbar-inverse .navbar-header>a{
             color: rgba(39,52,52,.9) !important;
-            padding-bottom: 5px !important;
             border-bottom: none !important;
         }
 
@@ -232,34 +173,7 @@ body{
             margin: auto;
         }
 
-        .container .navbar-right {
-            padding: 0.25% 1% 0 0;
-            margin: auto;
-        }
 
-    /*modifies styling of navbar right */
-        .navbar-right a{
-            color: #3c3c3c;
-            font-weight: 400;
-            font-size: 1.1em;
-            text-transform: uppercase;
-        }
-
-        .navbar-inverse .navbar-toggle .icon-bar{
-            background-color: #5E5E5E !important;
-        }
-
-        .nav li a{
-            margin-bottom: 0;
-            margin-top:0;
-        }
-
-        .nav li a:hover{
-            background-color: transparent;
-            font-weight: bold;
-            color: #000;
-            border-bottom: .05em solid #33000d;
-        }
 
 /*------project pages------*/
 /*---- side panel ----*/
@@ -338,16 +252,18 @@ body{
         opacity: 0.75;
     }
 
-/*------About Page------*/
-    .container .row .col-md-6 a, p{
+/*------About ------*/
+    .container .row .col-md-6 a, p.basicInfo{
         float: right;
         clear: both;
         margin-bottom: 0 !important;
+        font-weight: 300;
     }
+
     span.highlightInfo{
-        border-bottom: 0.5px dotted #337ab7;
         font-weight: 800;
         color: black;
+        text-transform: none;
     }
 
 /* responsive styling for project and home pages*/
