@@ -104,16 +104,18 @@ body{
         .navbar-brand {
             font-weight: 1000;
             padding:1% 3% 6% 3% !important;
-            background-color: rgba(255,255,255,.5); 
             position: fixed;
             border-radius: .2em
         }
 
-/*        a.navbar-brand:hover{
-            font-weight: bold;
-            border-bottom: .05em solid #33000d;
-            color: #000;
-        }*/
+        a.navbar-brand {
+            background-color: rgba(255,255,255,.55); 
+            padding-bottom: 0;
+        }
+        a.navbar-brand:hover {
+            background-color: rgba(255,255,255,.75); 
+            padding-bottom: 0;
+        }
 
         span.subtitle{
             font-size: .75em;
@@ -236,11 +238,11 @@ body{
         padding-right: 5%;
     }
 
-    .col-md-9 #linkedImage p{
+    /*.col-md-9*/ #linkedImage p{
         opacity: 0;
     }
 
-    .col-md-9 #linkedImage p:hover{
+   /* .col-md-9 */#linkedImage p:hover{
         opacity: 1;
         bottom: 0;
         color: #000;
@@ -249,7 +251,7 @@ body{
         position: absolute;
     }
 
-    .col-md-9 #linkedImage img:hover{
+   /* .col-md-9*/ #linkedImage img:hover{
         opacity: 0.75;
     }
 
