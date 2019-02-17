@@ -238,11 +238,11 @@ body{
         padding-right: 5%;
     }
 
-    /*.col-md-9*/ #linkedImage p{
+    .col-md-9 #linkedImage p{
         opacity: 0;
     }
 
-   /* .col-md-9 */#linkedImage p:hover{
+    .col-md-9 #linkedImage p:hover{
         opacity: 1;
         bottom: 0;
         color: #000;
@@ -251,8 +251,14 @@ body{
         position: absolute;
     }
 
-   /* .col-md-9*/ #linkedImage img:hover{
+    .col-md-9 #linkedImage img:hover{
         opacity: 0.75;
+    }
+
+    .overlay-link {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 800;
     }
 
 /*------About ------*/
