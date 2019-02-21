@@ -13,6 +13,10 @@ body{
     opacity: 0;
 }
 
+a {
+    font-weight: 600;
+}
+
 /*----masonry  home page ----*/
     .tab-content {
         padding-top: 3%;
